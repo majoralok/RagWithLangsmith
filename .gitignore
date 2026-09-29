@@ -1,0 +1,8 @@
+.env
+.rag_index/
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+

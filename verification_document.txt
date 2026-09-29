@@ -1,0 +1,3 @@
+LangSmith records application traces as nested runs. A retriever run can include
+the search query, retrieved document text, source metadata, ranks, and scores.
+Chroma provides persistent local vector search for the RAG knowledge base.
