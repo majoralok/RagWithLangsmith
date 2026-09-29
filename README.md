@@ -51,7 +51,19 @@ The local Chroma embedding model is `all-MiniLM-L6-v2` and requires no API key.
 
 ## Run
 
-Index one file or every supported file below a directory:
+The repository includes Microsoft's official *Cloud Design Patterns* book as a
+substantial system-design sample. It covers 24 patterns and related guidance
+for cloud and distributed-system architecture. Index it with:
+
+```bash
+python app.py ingest ./documents/cloud-design-patterns.pdf
+```
+
+The document is published by Microsoft and is available from the official
+[Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=42026).
+
+You can instead index any supported file or every supported file below a
+directory:
 
 ```bash
 python app.py ingest ./documents
@@ -63,16 +75,16 @@ This replaces the existing collection. Use `--append` to retain it:
 python app.py ingest ./more-documents --append
 ```
 
-Ask one question:
+Ask a system-design question:
 
 ```bash
-python app.py ask "What does the documentation say about data retention?"
+python app.py ask "When should I use the circuit breaker pattern?"
 ```
 
 Inspect the exact retrieved text and scores in the terminal as well as LangSmith:
 
 ```bash
-python app.py ask "What does the documentation say about data retention?" --show-context
+python app.py ask "When should I use the circuit breaker pattern?" --show-context
 ```
 
 Start an interactive session:
